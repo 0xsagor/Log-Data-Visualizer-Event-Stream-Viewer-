@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log Data Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Log Data Visualizer</h1>
+
+  <div class="controls">
+    <select id="level" onchange="render()">
+      <option value="all">All Levels</option>
+      <option value="info">Info</option>
+      <option value="warn">Warning</option>
+      <option value="error">Error</option>
+    </select>
+
+    <button onclick="addLog('info')">Add Info</button>
+    <button onclick="addLog('warn')">Add Warning</button>
+    <button onclick="addLog('error')">Add Error</button>
+    <button onclick="clearLogs()">Clear</button>
+  </div>
+
+  <ul id="logs"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
