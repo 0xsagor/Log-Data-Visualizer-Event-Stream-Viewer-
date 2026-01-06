@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+.app {
+  width: 720px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+.controls button, select {
+  padding: 8px 12px;
+  margin-right: 6px;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.info { color: #3498db; }
+.warn { color: #f39c12; }
+.error { color: #e74c3c; }
